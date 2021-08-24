@@ -7,7 +7,7 @@ import requests
 
 ### LINE 通知設定
 headers = {
-    "Authorization": "Bearer " + "cilGuMLmQpO6gCcKAtfefpDdrwHdCqKMUjiUj2NJKiH",
+    "Authorization": "Bearer " + "cilGuMLmQpO6gCcKAtfefpDdrwHdCqKMUjiUj2N****",
     "Content-Type": "application/x-www-form-urlencoded"
 }
 
