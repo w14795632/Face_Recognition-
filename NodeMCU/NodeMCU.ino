@@ -3,9 +3,9 @@
 #include <Servo.h>
 // 連線設定( SSID 為本地wifi名稱 password為WIFI密碼 mqtt_server填寫需連線的主機端)
 
-const char* ssid = "Lee";
-const char* password = "00000000";
-const char* mqtt_server = "broker.mqtt-dashboard.com";
+const char* ssid = "WIFI帳號";
+const char* password = "WIFI密碼";
+const char* mqtt_server = "MQTT伺服器";
 ///
 
 
@@ -54,7 +54,7 @@ Servo myservo;
 int ledPin = D1;
 int ledPin1 = D2;
 
-//設定 MQTT 收到 指令 " 1 " 時，及為開門反之收到 " 0 " 則為關門
+//設定 MQTT 收到 指令 " 1 " 時，及為開門並且亮綠燈，反之收到 " 0 " 則為關門，亮紅燈。
 void callback(char* topic, byte* payload, unsigned int length) {
   Serial.print("Message arrived [");
   Serial.print(topic);payload;
