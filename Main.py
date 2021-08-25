@@ -15,7 +15,7 @@ headers = {
 ###  讀取電腦上的鏡頭位置
 video_capture = cv2.VideoCapture(0)
 
-### 建立人臉資料夾，指定路徑需要正確位置 ((請自行更新))
+### 建立人臉資料夾，指定路徑需要正確位置 ((請自行更新))這邊要!!注意!!必須要對應路徑、檔案名稱
 
 chin_image = face_recognition.load_image_file("face_image\\chin.jpg")
 chin_face_encoding = face_recognition.face_encodings(chin_image)[0]
